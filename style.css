@@ -1,0 +1,293 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;   
+}
+
+nav a:hover {
+    text-shadow: 1px 1px 5px black;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.produtos li:hover {
+    border: 2px solid #113cea;
+    cursor: pointer;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos li:active {
+    border: 2px dashed #03933f;
+    cursor: grabbing;
+}
+
+.produtos h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 16px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main form {
+    width: 940px;
+    margin: 20px 20px ;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    color: white;
+    background: #113cea;
+    font-weight: bold;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 1s background, 1s color, 1s transform; /* outra opção seria transition: 1s all; */
+} 
+
+.enviar:hover {
+    background: white;
+    color:#113cea;
+    cursor: pointer;
+    border: 1.5px solid #113cea;
+    transform: scale(1.08);
+}
+
+table {
+    margin: 20px 20px 40px;
+}
+
+thead {
+    background: #113cea;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* CSS da Página Inicial */
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.titulo-principal:before {
+    content: "[ ";
+}
+
+.titulo-principal::after {
+    content: " ]";
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    box-shadow: 7px 7px 25px black, 2px 1px 5px #000064;
+    border-radius: 10px;
+}
+
+.utensilios:hover {
+    opacity: 0.9;
+    transition: 400ms;
+    transform: scale(1.02);
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:before {
+    content: "★ ";
+}
+.itens:nth-child(2n) {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    box-shadow: 7px 7px 25px black, 2px 1px 5px #000064;
+    border-radius: 10px;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.9;
+    transition: 400ms;
+    transform: scale(1.02);
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 914px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+}
